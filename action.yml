@@ -1,0 +1,7 @@
+name: 'Reboot on NixOS kernel change'
+description: 'automatically reboots hosts when a new kernel was deployed on them'
+
+runs:
+  using: "composite"
+  main: src/main.sh
+  post: sr/post.sh
